@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		442DAFB0F4FB9576E3BD2C06 /* libPods-KryptoPos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5771636B85E44D1E960A4DDB /* libPods-KryptoPos.a */; };
 		ADFB9F8823EBD04400DE984C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB9F8723EBD04400DE984C /* AppDelegate.swift */; };
 		ADFB9F8A23EBD04400DE984C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB9F8923EBD04400DE984C /* SceneDelegate.swift */; };
 		ADFB9F8C23EBD04400DE984C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB9F8B23EBD04400DE984C /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		ADFB9F9423EBD04700DE984C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFB9F9223EBD04700DE984C /* LaunchScreen.storyboard */; };
 		ADFB9F9F23EBD04700DE984C /* KryptoPosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB9F9E23EBD04700DE984C /* KryptoPosTests.swift */; };
 		ADFB9FAA23EBD04700DE984C /* KryptoPosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB9FA923EBD04700DE984C /* KryptoPosUITests.swift */; };
+		ADFB9FB823EBD14C00DE984C /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB9FB723EBD14C00DE984C /* NetworkingClient.swift */; };
+		ADFB9FBA23EC02E100DE984C /* libAlamofire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADFB9FB923EC02E100DE984C /* libAlamofire.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5771636B85E44D1E960A4DDB /* libPods-KryptoPos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KryptoPos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BFEA71EAAD0BB3AD3E7DA5A /* Pods-KryptoPos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KryptoPos.release.xcconfig"; path = "Target Support Files/Pods-KryptoPos/Pods-KryptoPos.release.xcconfig"; sourceTree = "<group>"; };
+		673AD6DF421F3FCE42C32EFC /* Pods-KryptoPos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KryptoPos.debug.xcconfig"; path = "Target Support Files/Pods-KryptoPos/Pods-KryptoPos.debug.xcconfig"; sourceTree = "<group>"; };
 		ADFB9F8423EBD04400DE984C /* KryptoPos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KryptoPos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFB9F8723EBD04400DE984C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADFB9F8923EBD04400DE984C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,8 @@
 		ADFB9FA523EBD04700DE984C /* KryptoPosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KryptoPosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFB9FA923EBD04700DE984C /* KryptoPosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KryptoPosUITests.swift; sourceTree = "<group>"; };
 		ADFB9FAB23EBD04700DE984C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFB9FB723EBD14C00DE984C /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
+		ADFB9FB923EC02E100DE984C /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADFB9FBA23EC02E100DE984C /* libAlamofire.a in Frameworks */,
+				442DAFB0F4FB9576E3BD2C06 /* libPods-KryptoPos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11E58703CBBE0769A2809CBB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				673AD6DF421F3FCE42C32EFC /* Pods-KryptoPos.debug.xcconfig */,
+				5BFEA71EAAD0BB3AD3E7DA5A /* Pods-KryptoPos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ADFB9F7B23EBD04400DE984C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +102,8 @@
 				ADFB9F9D23EBD04700DE984C /* KryptoPosTests */,
 				ADFB9FA823EBD04700DE984C /* KryptoPosUITests */,
 				ADFB9F8523EBD04400DE984C /* Products */,
+				11E58703CBBE0769A2809CBB /* Pods */,
+				D495CEAF57B420B18CE8D499 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +127,7 @@
 				ADFB9F9023EBD04700DE984C /* Assets.xcassets */,
 				ADFB9F9223EBD04700DE984C /* LaunchScreen.storyboard */,
 				ADFB9F9523EBD04700DE984C /* Info.plist */,
+				ADFB9FB723EBD14C00DE984C /* NetworkingClient.swift */,
 			);
 			path = KryptoPos;
 			sourceTree = "<group>";
@@ -128,6 +150,15 @@
 			path = KryptoPosUITests;
 			sourceTree = "<group>";
 		};
+		D495CEAF57B420B18CE8D499 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADFB9FB923EC02E100DE984C /* libAlamofire.a */,
+				5771636B85E44D1E960A4DDB /* libPods-KryptoPos.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADFB9FAE23EBD04700DE984C /* Build configuration list for PBXNativeTarget "KryptoPos" */;
 			buildPhases = (
+				31D11DFE10A68DFBE2A77AF3 /* [CP] Check Pods Manifest.lock */,
 				ADFB9F8023EBD04400DE984C /* Sources */,
 				ADFB9F8123EBD04400DE984C /* Frameworks */,
 				ADFB9F8223EBD04400DE984C /* Resources */,
@@ -254,11 +286,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31D11DFE10A68DFBE2A77AF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KryptoPos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ADFB9F8023EBD04400DE984C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADFB9FB823EBD14C00DE984C /* NetworkingClient.swift in Sources */,
 				ADFB9F8C23EBD04400DE984C /* ViewController.swift in Sources */,
 				ADFB9F8823EBD04400DE984C /* AppDelegate.swift in Sources */,
 				ADFB9F8A23EBD04400DE984C /* SceneDelegate.swift in Sources */,
@@ -432,6 +490,7 @@
 		};
 		ADFB9FAF23EBD04700DE984C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 673AD6DF421F3FCE42C32EFC /* Pods-KryptoPos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +509,7 @@
 		};
 		ADFB9FB023EBD04700DE984C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BFEA71EAAD0BB3AD3E7DA5A /* Pods-KryptoPos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
