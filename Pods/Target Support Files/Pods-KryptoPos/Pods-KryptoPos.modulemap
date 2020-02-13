@@ -1,0 +1,6 @@
+module Pods_KryptoPos {
+  umbrella header "Pods-KryptoPos-umbrella.h"
+
+  export *
+  module * { export * }
+}
